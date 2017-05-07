@@ -1,0 +1,7 @@
+<p>
+  Movies List:
+</p>
+<ul *ngFor="let movie of moviesList">
+  <li (click)="selectedMovie(movie)" [innerHtml]="movie.name"></li>
+</ul>
+
